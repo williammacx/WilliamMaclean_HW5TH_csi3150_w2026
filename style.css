@@ -19,3 +19,30 @@ header {
   background: white;
   justify-content: center;
 }
+
+.filters input,
+.filters select,
+.filters button {
+  padding: 10px;
+  font-size: 14px;
+}
+
+#message {
+  text-align: center;
+  font-weight: bold;
+  color: red;
+  margin-top: 20px;
+}
+
+#carlist {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+  
