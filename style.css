@@ -45,4 +45,8 @@ header {
   border-radius: 10px;
   padding: 20px;
 }
+
+.card h3 {
+  margin-top: 0;
+}
   
