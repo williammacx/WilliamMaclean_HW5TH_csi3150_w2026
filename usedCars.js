@@ -1,0 +1,47 @@
+const usedCars = [
+  {
+    year: 2018,
+    make: "Toyota",
+    model: "Camry",
+    mileage: 30000,
+    price: 18000,
+    color: "Silver",
+    gasMileage: "25 mpg city, 35 mpg highway",
+  },
+  {
+    year: 2016,
+    make: "Honda",
+    model: "Civic",
+    mileage: 45000,
+    price: 14000,
+    color: "White",
+    gasMileage: "30 mpg city, 40 mpg highway",
+  },
+  {
+    year: 2017,
+    make: "Ford",
+    model: "Fusion",
+    mileage: 35000,
+    price: 16000,
+    color: "Black",
+    gasMileage: "28 mpg city, 38 mpg highway",
+  },
+  {
+    year: 2019,
+    make: "Tesla",
+    model: "Model S",
+    mileage: 18000,
+    price: 55000,
+    color: "Black",
+    gasMileage: "Electric (370 miles per charge)",
+  },
+  {
+    year: 2020,
+    make: "Porsche",
+    model: "Cayenne",
+    mileage: 22000,
+    price: 68000,
+    color: "White",
+    gasMileage: "20 mpg city, 26 mpg highway",
+  }
+];
