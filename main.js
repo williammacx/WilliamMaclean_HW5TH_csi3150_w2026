@@ -33,5 +33,16 @@ function displayCars(cars) {
   }
 
   message.textContent = "";
+
+  cars.forEach(car => {
+    const card = document.createElement("div");
+    card.className = "card";
+
+    card.innerHTML = 
+      "<h3>" + car.year + " " + car.make + " " + car.model + </h3> +
+      "<p>Mileage: " + car.mileage + </p>" +
+      "<p>Price: $" " + car.price + </p>" +
+      "<p>Color: " + car.color + </p>" +
+      "<p>" + car.gasMileage + </p>";
   
 };
