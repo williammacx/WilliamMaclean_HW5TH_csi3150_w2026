@@ -24,6 +24,14 @@ function makeFilters() {
 
 }
 
+function displayCars(cars) {
+  carList.innerHTML = "";
 
+  if (cars.length === 0) {
+    message.textContent = "No cars available fitting these criteria.";
+    return;
+  }
+
+  message.textContent = "";
   
 };
