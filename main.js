@@ -44,5 +44,14 @@ function displayCars(cars) {
       "<p>Price: $" " + car.price + </p>" +
       "<p>Color: " + car.color + </p>" +
       "<p>" + car.gasMileage + </p>";
+    carList.appendChild(card);
+
+  });
+}
+
+function getSelectedValues(selectId) {
+  return Array
+
+}
   
 };
