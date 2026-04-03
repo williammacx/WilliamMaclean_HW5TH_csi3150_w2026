@@ -63,6 +63,26 @@ function applyFilters() {
     const selectedMakes = getSelectedValues("make");
     const selectedColors = getSelectedValues("color");
 
+  const filtered = usedCars.filter(car => { return 
+    ( (!minYear || car.year >= minYear) && 
+     (!maxYear || car.year <= maxYear) && 
+     (!maxMileage || car.mileage <= maxMileage) && 
+     (!minPrice || car.price >= minPrice) && 
+     (!maxPrice || car.price <= maxPrice) && 
+     (selectedMakes.length === 0 || selectedMakes.includes(car.make)) && 
+     (selectedColors.length === 0 || selectedColors.includes(car.color)) 
+    ); 
+                                          
+      }); 
+  
+  displayCars(filtered); 
+
 }
+
+document.getElementById("filterBtn").addEventListener("click", applyFilters); 
+
+populateFilters(); 
+
+displayCars(usedCars);
   
 };
