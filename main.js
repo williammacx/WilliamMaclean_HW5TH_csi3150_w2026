@@ -49,8 +49,19 @@ function displayCars(cars) {
   });
 }
 
-function getSelectedValues(selectId) {
-  return Array
+return Array.from(document.getElementById(selectId).selectedOptions)
+        .map(option => option.value);
+}
+
+function applyFilters() {
+    const minYear = Number(document.getElementById("minYear").value);
+    const maxYear = Number(document.getElementById("maxYear").value);
+    const maxMileage = Number(document.getElementById("maxMileage").value);
+    const minPrice = Number(document.getElementById("minPrice").value);
+    const maxPrice = Number(document.getElementById("maxPrice").value);
+
+    const selectedMakes = getSelectedValues("make");
+    const selectedColors = getSelectedValues("color");
 
 }
   
