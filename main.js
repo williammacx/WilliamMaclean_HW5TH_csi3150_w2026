@@ -60,8 +60,8 @@ function applyFilters() {
   const minPrice = Number(document.getElementById("minPrice").value);
   const maxPrice = Number(document.getElementById("maxPrice").value);
 
-  const selectedMakes = getSelectedValues("make");
-  const selectedColors = getSelectedValues("color");
+ const selectedMake = document.getElementById("make").value;
+const selectedColor = document.getElementById("color").value;
 
   const filtered = usedCars.filter(car => {
     return (
@@ -70,8 +70,8 @@ function applyFilters() {
       (!maxMileage || car.mileage <= maxMileage) &&
       (!minPrice || car.price >= minPrice) &&
       (!maxPrice || car.price <= maxPrice) &&
-      (selectedMakes.length === 0 || selectedMakes.includes(car.make)) &&
-      (selectedColors.length === 0 || selectedColors.includes(car.color))
+      (!selectedMake || car.make === selectedMake) &&
+      (!selectedColor || car.color === selectedColor)
     );
   });
 
